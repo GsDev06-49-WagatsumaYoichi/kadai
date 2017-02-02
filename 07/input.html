@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<title>Awesome Books</title>
+		<link rel="stylesheet" href="css/input.css"/>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script>
+            $(function() {
+                
+                $('#step1 form').on('submit', function() {
+                    var f = $(this).parent();
+                    var q = $.trim($(this).find('input[name="q"]').val());
+                    if (q !== '') {
+                        var ul = f.find('ul').empty();
+                        var option = {
+                            url: 'https://www.googleapis.com/books/v1/volumes?q=' + encodeURIComponent(q),
+                            dataType: 'jsonp'
+                        };
+                        $.ajax(option).done(function(result) {
+                            $.each(result.items, function() {
+                                var title = $('<div>').addClass('title').text(this.volumeInfo.title);
+                                var thumbnail = $('<img>').attr({src: this.volumeInfo.imageLinks.thumbnail})
+                                var li = $('<li>')
+                                    .data(this)
+                                    .append(title)
+                                    .append(thumbnail)
+                                    .on('click', function() {
+                                        var book = $(this).data();
+                                        var thumbnail = $('<img>').attr({src: book.volumeInfo.imageLinks.thumbnail});
+                                        $('#step2')
+                                            .find('form').data(book).end()
+                                            .find('.title').text(book.volumeInfo.title).end()
+                                            .find('.thumbnail').append(thumbnail).end()
+                                            .show();
+                                        $('#step1').hide();
+                                    });
+                                ul.append(li);
+                            });
+                        });
+                    }
+                    return false;
+                });
+                
+                $('#step2 form').on('submit', function() {
+                    var book = $(this).data();
+                    var data = {
+                        book: {
+                            google: book.id,
+                            name: book.volumeInfo.title,
+                            thumbnail: book.volumeInfo.imageLinks.thumbnail
+                        },
+                        university: {
+                            name: $(this).find('input[name="university"]').val(),
+                            major: $(this).find('select[name="major"]').val()
+                        },
+                        contributor: $(this).find('input[name="contributor"]').val(),
+                        comment: $(this).find('textarea[name="comment"]').val(),
+                        star: $(this).find('select[name="star"]').val()
+                    };
+                    var option = {
+                        method: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify(data)
+                    };
+                    $.ajax('data.php/books', option).done(function(result) {
+                        if (result.success) {
+                            location.href = './';
+                        } else {
+                            // 登録NG
+                            console.warn(result);
+                        }
+                    });
+                    return false;
+                });
+                
+            });
+        </script>
+	</head>
+	<body>
+        <div class="logo-box">
+            <a href="./">
+                <img src="img/logo.png" alt="" class="logo">
+            </a>
+        </div>
+        
+        <div id="step1">
+            <form method="post">
+                <input type="text" name="q">
+                <button>あいまい検索</button>
+            </form>
+            <ul></ul>
+        </div>
+        
+        <div id="step2">
+            <form method="post">
+                <dl>
+                    <dt>書籍名</dt>
+                    <dd class="title"></dd>
+                    <dt>書籍画像</dt>
+                    <dd class="thumbnail"></dd>
+                    <dt>大学</dt>
+                    <dd><input type="text" name="university"></dd>
+                    <dt>専攻</dt>
+                    <dd>
+                        <select name="major">
+                            <option value="経済系">経済系</option>
+                            <option value="経営系">経営系</option>
+                            <option value="理工系">理工系</option>
+                            <option value="物理系">物理系</option>
+                            <option value="法学系">法学系</option>
+                            <option value="文学系">文学系</option>
+                        </select>
+                    </dd>
+                    <dt>投稿者</dt>
+                    <dd><input type="text" name="contributor"></dd>
+                    <dt>コメント</dt>
+                    <dd><textarea name="comment" rows="5"></textarea></dd>
+                    <dt>星</dt>
+                    <dd>
+                        <select name="star">
+                            <option value="0" >☆☆☆☆☆</option>
+                            <option value="1" >★☆☆☆☆</option>
+                            <option value="2" >★★☆☆☆</option>
+                            <option value="3" >★★★☆☆</option>
+                            <option value="4" >★★★★☆</option>
+                            <option value="5" >★★★★★</option>
+                        </select>
+                    </dd>
+                </dl>
+                <button style="cursor:pointer">Awesomeな本を拡散</button>
+            </form>
+        </div>
+        
+	</body>
+</html>

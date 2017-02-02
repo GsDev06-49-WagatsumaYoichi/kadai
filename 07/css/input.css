@@ -1,0 +1,59 @@
+/*    リセットcss*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+body{
+    background-color: #EEEEEE;
+}
+h1{
+    color: #080404;
+    border-bottom: solid 1px #ccc;
+    background-color: #fff;
+    padding-left: 20px;
+    height: 100px;
+    padding-top: 20px;
+}
+form {
+    margin: 10px;
+}
+button {
+    height: 45px;
+    width: 200px;
+    font-size: 16px;
+    border-top-color: none;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.logo-box{
+    height: 100px;
+    background-color: #fff;
+    
+}
+.logo{
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+
+#step1 ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+#step1 li {
+    width: 200px;
+}
+
+#step2 {
+    display: none;
+}
+input[type="text"] {
+    height: 50px;
+    width: 300px;
+    font-size: 18px;
+}
+

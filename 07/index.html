@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/awesome.css"/>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function() {
+            var books = [];
+            
+            var view = function() {
+                var major = $('.tab-box > .current').text();
+                var box = $('.post-box').empty();
+                var filter = {};
+                $.each(books, function() {
+                    if (major !== '全て' && this.university.major !== major) {
+                        return;
+                    }
+                    var id = this.book.google || this.id;
+                    if (id in filter) {
+                        filter[id].count ++;
+                    } else {
+                        filter[id] = {
+                            name: this.book.name,
+                            thumbnail: this.book.thumbnail,
+                            count: 1
+                        };
+                    }
+                });
+                $.each(filter, function(id) {
+                    var book = this;
+                    var thumbnail = $('<div>').append(function() {
+                        return $('<img>').addClass('book-img').attr({src: book.thumbnail});
+                    });
+                    var text = $('<div>')
+                        .addClass('book-txt')
+                        .append($('<p>').text(book.name))
+                        .append($('<p>').text('投稿件数：' + book.count))
+                    box.append(function() {
+                        return $('<div>')
+                            .addClass('book')
+                            .append(thumbnail)
+                            .append(text)
+                            .on('click', function() {
+                                var popup = $('<div>')
+                                    .append(function() {
+                                        var thumbnail = $('<img>').addClass('book-img').attr({src: book.thumbnail});
+                                        return $('<div>').append(thumbnail);
+                                    })
+                                    .append(function() {
+                                        var info = $('<div>')
+                                            .addClass('book-info')
+                                            .append($('<h4>').text(book.name));
+                                        return $('<div>').append(info);
+                                    });
+                            
+                                $.each(books, function() {
+                                    if (major !== '全て' && this.university.major !== major) {
+                                        return;
+                                    }
+                                    if (id !== this.id && id !== this.book.google) {
+                                        return;
+                                    }
+                                    var star = '';
+                                    for (var i = 0; i < 5; i ++) {
+                                        star += (i < this.star) ? '★' : '☆';
+                                    }
+                                    var text = $('<div>')
+                                        .addClass('book-txt')
+                                        .append($('<p class="star">').text(star))
+                                        .append($('<p>').text(this.university.name))
+                                        .append($('<p>').text(this.university.major))
+                                        .append($('<p>').text(this.created))
+                                        .append($('<p>').text(this.comment));
+                                    popup.append(text);
+                                });
+
+
+                                $('body').append(function() {
+                                    return $('<div>')
+                                        .addClass('popup')
+                                        .append(popup)
+                                        .on('click', function() {
+                                            $(this).fadeOut('fast', function() {
+                                                $('body').css('overflow','')
+                                                $(this).remove();
+                                            });
+                                        });
+                                });
+                                $('body').css('overflow','hidden')
+                                popup.fadeIn('fast');
+                            });
+                    });
+                });
+            };
+            
+            $('.tab-box > .tab').on('click', function() {
+                $(this).siblings().removeClass('current');
+                $(this).addClass('current');
+                view();
+            });
+            
+            $.ajax('data.php/books').done(function(result) {
+                if (result.success) {
+                    $.each(result.books, function() {
+                        books.push(this);
+                    });
+                    view();
+                }
+            });
+            
+        });
+    </script>
+</head>
+<body>
+   <div class="top">
+        <div>
+            <a href="./">
+                <img src="img/logo.png" alt="" class="logo">
+            </a>
+        </div>
+        <div class="tab-box">
+            <div class="tab current">全て</div>
+            <div class="tab">経済系</div>
+            <div class="tab">経営系</div>
+            <div class="tab">理工系</div>
+            <div class="tab">物理系</div>
+            <div class="tab">法学系</div>
+            <div class="tab">文学系</div>
+        </div>
+    </div>
+    <div class="guide">
+    <p>AwesomBooksは、大学生が衝撃を受けた本をシェアできるサービスです。<br>専攻ごとに本を検索できます。</p>
+    <a href="input.html" class="post-b">投稿する</a>
+    </div>
+    <div class="post-box"></div>
+</body>
+</html>
