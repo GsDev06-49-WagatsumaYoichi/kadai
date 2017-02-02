@@ -4,6 +4,8 @@
 		<meta charset="utf8">
 		<title>Awesome Books</title>
 		<link rel="stylesheet" href="css/input.css"/>
+
+
         <script src="js/jquery-3.1.1.min.js"></script>
         <script>
             $(function() {
@@ -82,13 +84,16 @@
             <a href="./">
                 <img src="img/logo.png" alt="" class="logo">
             </a>
+            <a href="http://tokyo-rocket.net/" class="copyright">© TokyoRocket Inc. All Rights Reserved.</a>
         </div>
         
         <div id="step1">
             <form method="post">
-                <input type="text" name="q">
-                <button>あいまい検索</button>
+                <input type="text" name="q"placeholder="あいまい検索">
+                <button><img src="./img/search.png" alt="" class="s-img"></button>
+                
             </form>
+            
             <ul></ul>
         </div>
         
@@ -107,7 +112,7 @@
                             <option value="経済系">経済系</option>
                             <option value="経営系">経営系</option>
                             <option value="理工系">理工系</option>
-                            <option value="物理系">物理系</option>
+                            <option value="情報系">情報系</option>
                             <option value="法学系">法学系</option>
                             <option value="文学系">文学系</option>
                         </select>
@@ -116,7 +121,7 @@
                     <dd><input type="text" name="contributor"></dd>
                     <dt>コメント</dt>
                     <dd><textarea name="comment" rows="5"></textarea></dd>
-                    <dt>星</dt>
+                    <dt>評価</dt>
                     <dd>
                         <select name="star">
                             <option value="0" >☆☆☆☆☆</option>
@@ -128,8 +133,24 @@
                         </select>
                     </dd>
                 </dl>
-                <button style="cursor:pointer">Awesomeな本を拡散</button>
+                <button style="cursor:pointer">送信</button>
+               
+                   
+                   
+            
+                <div class="sample">
+                    <img src="img/tw.png" alt="">
+                    <input type="radio" name="s2" id="on" value="1" checked="">
+                    <label for="on" class="switch-on">share</label>
+                    <input type="radio" name="s2" id="off" value="0">
+                    <label for="off" class="switch-off">OFF</label>
+                </div>
+                
             </form>
+      
+                
+          
+            
         </div>
         
 	</body>

@@ -15,18 +15,36 @@ h1{
     height: 100px;
     padding-top: 20px;
 }
+div#step1 {
+    padding-left: 20px;
+}
 form {
-    margin: 10px;
+    margin: 20px 0 50px 0;
+}
+input[type="text"] {
+    height: 40px;
+    width: 300px;
+    font-size: 18px;
+    padding-left: 10px;
+    
 }
 button {
-    height: 45px;
-    width: 200px;
+    height: 40px;
+    width: 70px;
     font-size: 16px;
     border-top-color: none;
-    margin-top: 20px;
-    margin-left: 20px;
+/*    margin-top: 30px;*/
     cursor: pointer;
+    background-color: rgba(51, 174, 255, 0.7);
+    border-style: none;
+    border-radius: 3px;
+    vertical-align: bottom;
 }
+.s-img{
+    width: 30px;
+}
+
+
 .logo-box{
     height: 100px;
     background-color: #fff;
@@ -51,9 +69,66 @@ button {
 #step2 {
     display: none;
 }
-input[type="text"] {
-    height: 50px;
-    width: 300px;
-    font-size: 18px;
+dl {
+    margin-bottom: 20px;
+    /* padding-left: 20px; */
 }
-
+div#step2 {
+    padding-left: 20px;
+}
+.copyright{
+    display: block;
+    margin-left: 70px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+}
+.sample > img {
+    width: 45px;
+    margin-right: 10px;
+}
+/*スイッチ*/
+.sample input {
+	display: none;
+}
+.sample label{
+	display: block;
+	float: left;
+	cursor: pointer;
+	width: 60px;
+	margin: 0;
+	padding: 10px;
+	background: #bdc3c7;
+	color: #869198;
+	font-size: 16px;
+	text-align: center;
+	line-height: 1;
+	transition: .2s;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.sample label:first-of-type{
+	border-radius: 3px 0 0 3px;
+}
+.sample label:last-of-type{
+	border-radius: 0 3px 3px 0;
+}
+.sample input[type="radio"]:checked + .switch-on {
+	background-color: rgba(51, 174, 255, 1.0);
+	color: #fff;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.sample input[type="radio"]:checked + .switch-off {
+	background-color: rgba(51, 174, 255, 1.0);
+	color: #fff;
+    font-size: 12px;
+    margin-top: 5px;
+}
+/*スイッチここまで*/
+.sample {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: flex-start;
+    margin-top: 20px;
+}
