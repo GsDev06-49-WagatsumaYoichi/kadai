@@ -9,7 +9,7 @@ try {
   exit('DbConnectError:'.$e->getMessage());
 }
 //３．データ登録SQL作成
-$stmt = $pdo->prepare("DELETE FROM gs_an_table WHERE id=:id");
+$stmt = $pdo->prepare("DELETE FROM gs_user_table WHERE id=:id");
 $stmt->bindValue(':id', $id);
 $status = $stmt->execute();
 //４．データ登録処理後

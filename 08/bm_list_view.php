@@ -7,7 +7,7 @@ try {
 }
 
 //２．データ登録SQL作成
-$stmt = $pdo->prepare("SELECT * FROM gs_an_table");
+$stmt = $pdo->prepare("SELECT * FROM gs_user_table");
 $status = $stmt->execute();
 
 //３．データ表示
@@ -19,10 +19,10 @@ if($status==false){
 }else{
   //Selectデータの数だけ自動でループしてくれる
   while( $result = $stmt->fetch(PDO::FETCH_ASSOC)){
-    
+
       $view .="<p>";
       $view .='<a href="bm_update_view.php? id='.$result["id"].'">';
-      $view .= $result["name"]."[".$result["indate"]."]";
+      $view .= $result["name"]."[".$result["lid"]."]";
       $view .="</a>";
       
       $view .=" ";
@@ -31,7 +31,23 @@ if($status==false){
       $view .="</a>";
       $view .="</p>";
       
+      if($result["kanri_flg"] >= 1)
+      {
+          $view.="管理者";
+      }
+      else
+      {
+          $view.="一般";
+      }
       
+      if($result["life_flg"] >= 1)
+      {
+          $view.="使用していない";
+      }
+      else
+      {
+          $view.="使用中";
+      }
   }
 }
 ?>

@@ -1,9 +1,11 @@
 <?php
 //1.POSTでParamを取得
-$id     = $_POST["id"];
+$id   = $_POST["id"];
 $name   = $_POST["name"];
-$email  = $_POST["email"];
-$naiyou = $_POST["naiyou"];
+$lid  = $_POST["lid"];
+$lpw = $_POST["lpw"];
+$kanri_flg = $_POST["kanri_flg"];
+$life_flg = $_POST["life_flg"];
 //2.DB接続など
 //2. DB接続します(エラー処理追加)
 try {
@@ -12,10 +14,12 @@ try {
   exit('DbConnectError:'.$e->getMessage());
 }
 //３．データ登録SQL作成
-$stmt = $pdo->prepare("UPDATE gs_an_table SET name=:name,email=:email,naiyou=:naiyou WHERE id=:id");
+$stmt = $pdo->prepare("UPDATE gs_user_table SET name=:name,lid=:lid,lpw=:lpw,kanri_flg=:kanri_flg,life_flg=:life_flg WHERE id=:id");
 $stmt->bindValue(':name', $name);
-$stmt->bindValue(':email', $email);
-$stmt->bindValue(':naiyou', $naiyou);
+$stmt->bindValue(':lid', $lid);
+$stmt->bindValue(':lpw', $lpw);
+$stmt->bindValue(':kanri_flg', $kanri_flg);
+$stmt->bindValue(':life_flg', $life_flg);
 $stmt->bindValue(':id', $id);
 $status = $stmt->execute();
 //４．データ登録処理後
