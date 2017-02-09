@@ -20,7 +20,6 @@ try {
   exit('DbConnectError:'.$e->getMessage());
 }
 
-
 //３．データ登録SQL作成
 $stmt = $pdo->prepare("INSERT INTO gs_an_table(id, name, email, naiyou,
 indate )VALUES(NULL, :a1, :a2, :a3, sysdate())");

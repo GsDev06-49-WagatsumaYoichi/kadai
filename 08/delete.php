@@ -19,7 +19,7 @@ if($status==false){
   exit("QueryError:".$error[2]);
 }else{
   //５．index.phpへリダイレクト
-  header("Location: select.php");
+  header("Location: bm_list_view.php");
   exit;
 }
 //3.UPDATE gs_an_table SET ....; で更新(bindValue)
