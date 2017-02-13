@@ -1,8 +1,12 @@
 <?php
 session_start();
-
+//session_regenerate_id(true);
 //0.外部ファイル読み込み
 require_once "functions.php";
+
+$lid=$_POST["lid"];
+$lpw=$_POST["lpw"];
+
 
 if(
     !isset($_POST['lid'])||$_POST['lid']==''||
@@ -16,10 +20,10 @@ if(
 
 
 //1.  DB接続します
-$pdo = db_con();
+$pdo = ConnectDatabase();
 
 //2. データ登録SQL作成
-$sql = "SELECT * FROM gs_user_table WHERE lid=:lid AND lpw=:lpw AND life_flg=0";
+$sql = "SELECT * FROM gs_user_table WHERE lid=:lid AND lpw=:lpw";
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':lid', $_POST["lid"]);
 $stmt->bindValue(':lpw', $_POST["lpw"]);
@@ -39,12 +43,13 @@ $val = $stmt->fetch(); //1レコードだけ取得する方法
 //認証処理
 if( $val["id"] != "" ){
   $_SESSION["chk_ssid"]  = session_id();
-  $_SESSION["kanri_flg"] = $val['kanri_flg'];
-  $_SESSION["name"]      = $val['name'];
+  $_SESSION["lid"] = $val['lid'];
   header("Location:bm/bm_list_view.php");
 }else{
+    print'ログインされていません。<br>';
+    print'<a href="login.php">ログイン画面へ</a>';
   //logout処理を経由して全画面へ
-  header("Location:login.php");
+//  header("Location:login.php");
 }
 
 exit();

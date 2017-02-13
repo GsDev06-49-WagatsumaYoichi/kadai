@@ -1,4 +1,8 @@
 <?php
+session_start();
+require_once '../functions.php';
+loginCheck();
+
 //1.  DB接続します
 try {
   $pdo = new PDO('mysql:dbname=gs_db;charset=utf8;host=localhost','root','');
@@ -52,7 +56,7 @@ if($status==false){
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>フリーアンケート表示</title>
+        <title>ユーザー一覧・編集</title>
         <link rel="stylesheet" href="../css/range.css">
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <style>
@@ -68,14 +72,15 @@ if($status==false){
         <header>
               <nav class="navbar navbar-default">
                 <div class="container-fluid">
-                <div class="navbar-header"><a class="navbar-brand" href="user_index.php">ユーザー登録</a></div>
-                <div class="navbar-header">ユーザー一覧</div>
-                <div class="navbar-header"><a class="navbar-brand" href="../bm/bm_index.php">書籍登録</a></div>
-                <div class="navbar-header"><a class="navbar-brand" href="../bm/bm_list_view.php">書籍一覧</a></div>
+                <div class="navbar-header"><a class="navbar-brand" href="user_index.php">新規ユーザー登録</a></div>
+                <div class="navbar-header">ユーザー一覧・編集</div>
+                <div class="navbar-header"><a class="navbar-brand" href="../bm/bm_index.php">新規本の登録</a></div>
+                <div class="navbar-header"><a class="navbar-brand" href="../bm/bm_list_view.php">本の一覧・編集</a></div>
+                <div class="navbar-header"><a class="navbar-brand" href="../logout.php">ログアウト</a></div>
               </nav>
         </header>
         <!-- Head[End] -->
-
+        <h1>ユーザー一覧・編集</h1>
         <!-- Main[Start] -->
         <div>
             <div class="container jumbotron">

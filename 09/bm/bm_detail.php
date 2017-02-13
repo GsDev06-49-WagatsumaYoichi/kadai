@@ -13,7 +13,7 @@
  *
  * 参考まで: http://php.net/manual/ja/function.include.php
  */
-require_once 'functions.php';
+require_once '../functions.php';
 
 /**
  * IDを取得する
@@ -64,11 +64,11 @@ if ($record === false) {
 		<title>POSTデータ登録</title>
 	</head>
 	<body>
-
+        
 		<nav>
-			<a href="bm_list_view.php">データ一覧</a>
+			<a href="bm_list_view.php">本の一覧</a>
 		</nav>
-
+        <h1>本の編集</h1>
 		<form method="post" action="bm_update.php">
 			<dl>
 				<dt>書籍名</dt>

@@ -20,17 +20,14 @@ if($status==false){
   $res = $stmt->fetch(); //1レコード取得
  
 }
+
+
 ?>
 
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>POSTデータ登録</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <style>div{padding: 10px;font-size:16px;}</style>
-</head>
-<body>
+
+
 
 <!-- Head[Start] -->
 <head>
@@ -48,18 +45,19 @@ if($status==false){
         </style>
     </head>
 <!-- Head[End] -->
-
+<body>
 <!-- Main[Start] -->
 <form method="post" action="user_update.php">
   <div class="jumbotron">
    <fieldset>
-    <legend>編集・更新画面</legend>
+   <a href="user_list_view.php">ユーザー一覧に戻る</a>
+    <h1>ユーザー編集</h1>
      <label>名前：<input type="text" name="name" value="<?= $res["name"]?>"></label><br>
      <label>ID：<input type="text" name="lid" value="<?= $res["lid"]?>"></label><br>
      <label>パスワード<input type="password" name="lpw" value="<?= $res["lpw"]?>"></label><br>
        <label>権限
-       <input type="radio" name="kanri_flg" value="<?= $res["kanri_flg"]?>">一般
-       <input type="radio" name="kanri_flg" value="<?= $res["kanri_flg"]?>">管理者
+       <input type="radio" name="kanri_flg" value="0" "$checked0">一般
+       <input type="radio" name="kanri_flg" value="1" "$checked1">管理者
        </label><br>
 
        <input type="hidden" name="id" value="<?= $id ?>">
@@ -68,7 +66,5 @@ if($status==false){
   </div>
 </form>
 <!-- Main[End] -->
-
-
 </body>
 </html>
