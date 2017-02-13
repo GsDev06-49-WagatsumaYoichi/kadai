@@ -55,12 +55,21 @@ if($status==false){
      <label>名前：<input type="text" name="name" value="<?= $res["name"]?>"></label><br>
      <label>ID：<input type="text" name="lid" value="<?= $res["lid"]?>"></label><br>
      <label>パスワード<input type="password" name="lpw" value="<?= $res["lpw"]?>"></label><br>
-       <label>権限
-       <input type="radio" name="kanri_flg" value="0" "$checked0">一般
-       <input type="radio" name="kanri_flg" value="1" "$checked1">管理者
-       </label><br>
-
-       <input type="hidden" name="id" value="<?= $id ?>">
+   <label>
+<?php
+$kanri = $res["kanri_flg"];
+              
+$checked0 = ($kanri) ? "" : "checked";
+$checked1 = ($kanri) ? "checked" : "";
+              
+echo <<< EOT
+<input type="hidden" name="id" value="$id">
+<input class="radio" type="radio" name="kanri_flg" value=0 $checked0 />一般　
+<input class="radio" type="radio" name="kanri_flg" value=1 $checked1 />管理者　
+EOT;
+?>
+</label><br>
+    <input type="hidden" name="id" value="<?= $id ?>">
      <input type="submit" value="送信">
     </fieldset>
   </div>

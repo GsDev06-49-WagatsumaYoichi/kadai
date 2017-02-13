@@ -91,7 +91,7 @@ foreach ($query as $record) {
 					<td><?= h($i['indate']); ?></td>
 					<td><?= h($i['name']); ?></td>
 					<td>
-						<a href="bm_detail.php?id=<?= h($i['id']); ?>">[詳細]</a>
+						<a href="bm_update_view.php?id=<?= h($i['id']); ?>">[詳細]</a>
 						/
 						<a href="bm_delete.php?id=<?= h($i['id']); ?>">[削除]</a>
 					</td>

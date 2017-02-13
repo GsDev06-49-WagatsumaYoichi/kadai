@@ -44,6 +44,7 @@ $val = $stmt->fetch(); //1レコードだけ取得する方法
 if( $val["id"] != "" ){
   $_SESSION["chk_ssid"]  = session_id();
   $_SESSION["lid"] = $val['lid'];
+    
   header("Location:bm/bm_list_view.php");
 }else{
     print'ログインされていません。<br>';

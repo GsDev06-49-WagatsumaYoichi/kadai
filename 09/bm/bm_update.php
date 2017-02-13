@@ -13,7 +13,7 @@
  *
  * 参考まで: http://php.net/manual/ja/function.include.php
  */
-require_once 'functions.php';
+require_once '../functions.php';
 
 /**
  * POSTでアクセスしなかった場合はエラーにしてよい。
