@@ -3,7 +3,6 @@ session_start();
 require_once '../functions.php';
 loginCheck();
 
-
 /**
  * bm_list_view.php
  *
@@ -31,6 +30,7 @@ $sql = 'SELECT * FROM gs_bm_table';
 $query = $pdo->prepare($sql);
 $result = $query->execute();
 
+
 /**
  * 比較は == ではなくて、=== を使うこと。
  */
@@ -47,7 +47,8 @@ foreach ($query as $record) {
 	$data[] = $record;
 }
 
-// ここからHTML
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -69,11 +70,8 @@ foreach ($query as $record) {
     <header>
 		<nav class="navbar navbar-default">
                 <div class="container-fluid">
-                <div class="navbar-header"><a class="navbar-brand" href="../user/user_index.php">新規ユーザー登録</a></div>
-                <div class="navbar-header"><a class="navbar-brand" href="../user/user_list_view.php">ユーザー一覧・編集</a></div>
-                <div class="navbar-header"><a class="navbar-brand" href="../bm/bm_index.php">新規本の登録</a></div>
-                <div class="navbar-header">本の一覧・編集</div>
-                <div class="navbar-header"><a class="navbar-brand" href="../logout.php">ログアウト</a></div>
+                    <?= nav($pdo,__FILE__); ?>
+                </div>
         </nav>
     </header>
     <h1>本の一覧・編集</h1>

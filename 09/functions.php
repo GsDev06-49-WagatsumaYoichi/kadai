@@ -50,3 +50,66 @@ function loginCheck(){
         print '<br>';
     }
 }
+
+//NaviBar の切り替え
+function nav($pdo,$path){
+        $lid=$_SESSION['lid'];
+
+        //データ登録SQL作成
+        $stmt = $pdo->prepare("SELECT * FROM gs_user_table WHERE lid= :lid");//バインド変数埋め込み
+        $stmt->bindValue(":lid",$lid,PDO::PARAM_INT); //STR or INT PDO::はセキュリティ
+        $status = $stmt->execute();
+        //データ表示
+        if($status==false){
+          //execute（SQL実行時にエラーがある場合）
+          $error = $stmt->errorInfo();
+          exit("ErrorQuery:".$error[2]);
+        }else{
+          $res = $stmt->fetch(); //1レコード取得
+        }
+
+    
+        $fileName=basename($path);
+        $nav = '';
+        if ($res['kanri_flg'] ==1) {
+            if($fileName=='user_index.php')
+            {
+                $nav .= '<div class="navbar-header">新規ユーザー登録</div>';
+            }
+            else {
+                $nav .= '<div class="navbar-header"><a class="navbar-brand" href="../user/user_index.php">新規ユーザー登録</a></div>';
+            }
+            
+            if($fileName=='user_list_view.php')
+            {
+                $nav .= '<div class="navbar-header">ユーザー一覧・編集</div>';
+            }
+            else {
+                $nav .= '<div class="navbar-header"><a class="navbar-brand" href="../user/user_list_view.php">ユーザー一覧・編集</a></div>';
+            }
+        }
+            if($fileName=='bm_index.php')
+            {
+                $nav .= '<div class="navbar-header">新規本の登録</div>';
+            }
+            else {
+                $nav .= '<div class="navbar-header"><a class="navbar-brand" href="../bm/bm_index.php">新規本の登録</a></div>';
+            }
+            if($fileName=='bm_list_view.php')
+            {
+                $nav .= '<div class="navbar-header">本の一覧・編集</div>';
+            }
+            else {
+                $nav .= '<div class="navbar-header"><a class="navbar-brand" href="../bm/bm_list_view.php">本の一覧・編集</a></div>';
+            }
+            $nav .= '<div class="navbar-header"><a class="navbar-brand" href="../logout.php">ログアウト</a></div>';
+            print $nav;
+    
+    
+    
+    
+    
+    
+    
+    
+    }

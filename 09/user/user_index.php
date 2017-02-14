@@ -3,6 +3,7 @@
 session_start();
 require_once '../functions.php';
 loginCheck();
+$pdo = ConnectDatabase();
 ?>
 
 <!DOCTYPE html>
@@ -20,11 +21,8 @@ loginCheck();
 <header>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
-    <div class="navbar-header">新規ユーザー登録</div>
-    <div class="navbar-header"><a class="navbar-brand" href="user_list_view.php">ユーザー一覧・編集</a></div>
-    <div class="navbar-header"><a class="navbar-brand" href="../bm/bm_index.php">新規本の登録</a></div>
-    <div class="navbar-header"><a class="navbar-brand" href="../bm/bm_list_view.php">本の一覧・編集</a></div>
-    <div class="navbar-header"><a class="navbar-brand" href="../logout.php">ログアウト</a></div>
+    <?= nav($pdo,__FILE__); ?>
+    </div>
   </nav>
 </header>
 <!-- Head[End] -->

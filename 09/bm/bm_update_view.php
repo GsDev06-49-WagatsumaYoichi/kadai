@@ -1,6 +1,6 @@
 <?php
 /**
- * bm_detail.php
+ * bm_update_view.php
  *
  * データを表示する
  * ※画面は表示する
