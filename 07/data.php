@@ -10,38 +10,6 @@ $SETTINGS = array(
 	),
 );
 
-/* SQL
-
-CREATE TABLE gs_books (
-	id char(32) NOT NULL,
-	university char(32) NOT NULL,
-	contributor varchar(255) NOT NULL,
-	comment text NOT NULL,
-	book varchar(255) NOT NULL,
-	thumbnail varchar(255) NOT NULL,
-	star int(11) NOT NULL,
-	ipaddress varchar(16) DEFAULT NULL,
-	created datetime NOT NULL,
-	updated datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-ALTER TABLE gs_books
-	ADD PRIMARY KEY (id),
-	ADD KEY university (university);
-
-CREATE TABLE gs_universities (
-	id char(32) NOT NULL,
-	name varchar(255) NOT NULL,
-	major varchar(255) NOT NULL,
-	created datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-ALTER TABLE gs_universities
-	ADD PRIMARY KEY (id),
-	ADD UNIQUE KEY uniq (name, major);
-
-*/
-
 
 /**
  * ユニークなIDを作るための関数
