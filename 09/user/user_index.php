@@ -2,7 +2,7 @@
 <?php
 session_start();
 require_once '../functions.php';
-loginCheck();
+//loginCheck();
 $pdo = ConnectDatabase();
 ?>
 
@@ -18,13 +18,7 @@ $pdo = ConnectDatabase();
 <body>
 
 <!-- Head[Start] -->
-<header>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-    <?= nav($pdo,__FILE__); ?>
-    </div>
-  </nav>
-</header>
+
 <!-- Head[End] -->
 
 <!-- Main[Start] -->

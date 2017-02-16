@@ -28,7 +28,7 @@ try {
 $stmt = $pdo->prepare("INSERT INTO gs_user_table(id, name, lid, lpw, kanri_flg)VALUES(NULL, :a1, :a2, :a3, :a4)");
 $stmt->bindValue(':a1', $name);
 $stmt->bindValue(':a2', $lid);
-$stmt->bindValue(':a3', $lpw);
+$stmt->bindValue(':a3', password_hash($lpw, PASSWORD_DEFAULT));
 $stmt->bindValue(':a4', $kanri_flg);
 
 $status = $stmt->execute();
@@ -40,7 +40,7 @@ if($status==false){
   exit("QueryError:".$error[2]);
 }else{
   //５．index.phpへリダイレクト
-  header("Location: user_list_view.php");
+  header("Location: ../login.php");
   exit;
 }
 

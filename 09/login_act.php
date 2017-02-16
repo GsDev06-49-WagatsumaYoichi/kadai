@@ -23,10 +23,9 @@ if(
 $pdo = ConnectDatabase();
 
 //2. データ登録SQL作成
-$sql = "SELECT * FROM gs_user_table WHERE lid=:lid AND lpw=:lpw";
+$sql = "SELECT * FROM gs_user_table WHERE lid=:lid";
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':lid', $_POST["lid"]);
-$stmt->bindValue(':lpw', $_POST["lpw"]);
 $res = $stmt->execute();
 
 //3. SQL実行時にエラーがある場合
@@ -41,13 +40,12 @@ $val = $stmt->fetch(); //1レコードだけ取得する方法
 
 //5. 該当レコードがあればSESSIONに値を代入
 //認証処理
-if( $val["id"] != "" ){
+if ($val !== false && password_verify($_POST['lpw'], $val['lpw'])) {
   $_SESSION["chk_ssid"]  = session_id();
   $_SESSION["lid"] = $val['lid'];
-    
   header("Location:bm/bm_list_view.php");
 }else{
-    print'ログインされていません。<br>';
+    print'IDかパスワードが間違っています。<br>';
     print'<a href="login.php">ログイン画面へ</a>';
   //logout処理を経由して全画面へ
 //  header("Location:login.php");
