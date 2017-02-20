@@ -3,10 +3,8 @@ session_start();
 //session_regenerate_id(true);
 //0.外部ファイル読み込み
 require_once "functions.php";
-
 $lid=$_POST["lid"];
 $lpw=$_POST["lpw"];
-
 
 if(
     !isset($_POST['lid'])||$_POST['lid']==''||
@@ -16,8 +14,6 @@ if(
     header("Location:login.php");
     exit();
 }
-
-
 
 //1.  DB接続します
 $pdo = ConnectDatabase();
@@ -45,10 +41,8 @@ if ($val !== false && password_verify($_POST['lpw'], $val['lpw'])) {
   $_SESSION["lid"] = $val['lid'];
   header("Location:bm/bm_list_view.php");
 }else{
-    print'IDかパスワードが間違っています。<br>';
-    print'<a href="login.php">ログイン画面へ</a>';
   //logout処理を経由して全画面へ
-//  header("Location:login.php");
+  header("Location:login.php");
 }
 
 exit();
