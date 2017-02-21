@@ -1,22 +1,29 @@
 <?php
-
 include("functions.php");
 
-//1.GETでidを取得
-$id = $_GET["id"];
-
-//2.DB接続など
+//1.  DB接続します
 $pdo = db_con();
 
-//3.SELECT * FROM gs_an_table WHERE id=***; を取得（bindValueを使用！）
-$stmt = $pdo->prepare("SELECT * FROM gs_cms_table WHERE id=:id");
-$stmt->bindValue(":id", $id, PDO::PARAM_INT);
+//２．データ登録SQL作成
+$stmt = $pdo->prepare("SELECT * FROM gs_cms_table ORDER BY indate DESC limit 5");
 $status = $stmt->execute();
 
+//３．データ表示
+$view="";
 if($status==false){
   queryError($stmt);
 }else{
-  $row = $stmt->fetch();
+  //Selectデータの数だけ自動でループしてくれる
+  while( $result = $stmt->fetch(PDO::FETCH_ASSOC)){
+    $view .= '<dt class="news-list--date">'.h($result["indate"]).'</dt>';
+    $view .= '<dd class="news-list--note">';
+    $view .= '<a href="news.php?id='.$result["id"].'">';
+    $view .= h($result["title"]);
+    $view .= '<img src="'.$result['upfile'].'">';
+    $view .= '</a>　';
+    $view .= '</dd>';
+   
+  }
 }
 ?>
 <!DOCTYPE html>
@@ -54,6 +61,7 @@ if($status==false){
             </ul>
             </div>
         </header>
+
         <!--　nav_lower   -->
         <section class="nav_lower">
             <div class="inner">
@@ -71,30 +79,20 @@ if($status==false){
         </section>
     
         <!--news_lower    -->
-        <section id="news_lower">
-            <div class="news_lower_heading">
-            <div class="inner clearfix">
-                <div class="section-heading-wrap">
-                    <h2 class="section-title white">NEWS</h2>
-                    <p class="section-note"><?=$row["indate"]?></p>
-                    
-                </div>
-            </div>
-            </div>
+      <section id="news" class="contents-box">
+          <h2 class="section-title yellow">NEWS</h2>
+          <p class="section-note">お知らせ・更新情報</p>
+          <div class="inner">
+              <dl class="news-list clearfix">
+                  <?=$view?>
+                  
+              </dl>
 
-            <div class="inner">
-                <ul class="news_list clearfix">
-                    <li> 
-                    <dl>
-	                    <dt class="news-date clearfix"><span class="news_tags"><?=$row["title"]?></span></dt>
-	                    <dd class="news-title"><?=$row["article"]?></dd>
-	                        <img src="<?=$row["upfile"]?>">
-	                    </dl>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        
+
+
+          </div>
+      </section>
+   
         <!--#entry    -->
         <section id="entry" class="contents-box">
             <div class="contents-heading bg-yellow">

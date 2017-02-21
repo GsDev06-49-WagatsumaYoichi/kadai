@@ -23,18 +23,9 @@ if($status==false){
     $view .= '</dd>';
   }
 }
-
-
 //<dt class="news-list--date">2015.04.11</dt>
 //<a href="#">初日開講オリエンテーションが行われました！</a></dd>
-
-
 ?>
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,6 +59,7 @@ if($status==false){
             <li>GROWTH CHEESE</li>
             <li>CHEESE PERSPECTIVE</li>
             <li>CHEESE GENERATOR</li>
+            <li><a href="select.php">管理者画面へ</a></li>
         </ul>
         </div>
     </header>
@@ -110,7 +102,7 @@ if($status==false){
             <dl class="news-list clearfix">
                 <?=$view?>
             </dl>
-            <p class="news-note__more"><a href="news.html">ニュース一覧を見る</a></p>
+            <p class="news-note__more"><a href="news_list.php">ニュース一覧を見る</a></p>
         </div>
     </section>
     
