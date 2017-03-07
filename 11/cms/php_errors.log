@@ -1,0 +1,213 @@
+[07-Mar-2017 05:25:29 UTC] PHP Fatal error:  Class 'Barryvdh¥Debugbar\ServiceProvider' not found in /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[07-Mar-2017 05:25:29 UTC] PHP Stack trace:
+[07-Mar-2017 05:25:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/public/index.php:0
+[07-Mar-2017 05:25:29 UTC] PHP   2. Illuminate\Foundation\Http\Kernel->handle() /home/ubuntu/workspace/cms/public/index.php:54
+[07-Mar-2017 05:25:29 UTC] PHP   3. Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:99
+[07-Mar-2017 05:25:29 UTC] PHP   4. Illuminate\Foundation\Http\Kernel->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:127
+[07-Mar-2017 05:25:29 UTC] PHP   5. Illuminate\Foundation\Application->bootstrapWith() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:232
+[07-Mar-2017 05:25:29 UTC] PHP   6. Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:203
+[07-Mar-2017 05:25:29 UTC] PHP   7. Illuminate\Foundation\Application->registerConfiguredProviders() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php:17
+[07-Mar-2017 05:25:29 UTC] PHP   8. Illuminate\Foundation\ProviderRepository->load() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:530
+[07-Mar-2017 05:25:29 UTC] PHP   9. Illuminate\Foundation\ProviderRepository->compileManifest() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:60
+[07-Mar-2017 05:25:29 UTC] PHP  10. Illuminate\Foundation\ProviderRepository->createProvider() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:114
+[07-Mar-2017 05:27:31 UTC] PHP Fatal error:  Class 'Barryvdh¥Debugbar\ServiceProvider' not found in /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[07-Mar-2017 05:27:31 UTC] PHP Stack trace:
+[07-Mar-2017 05:27:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/public/index.php:0
+[07-Mar-2017 05:27:31 UTC] PHP   2. Illuminate\Foundation\Http\Kernel->handle() /home/ubuntu/workspace/cms/public/index.php:54
+[07-Mar-2017 05:27:31 UTC] PHP   3. Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:99
+[07-Mar-2017 05:27:31 UTC] PHP   4. Illuminate\Foundation\Http\Kernel->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:127
+[07-Mar-2017 05:27:31 UTC] PHP   5. Illuminate\Foundation\Application->bootstrapWith() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:232
+[07-Mar-2017 05:27:31 UTC] PHP   6. Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:203
+[07-Mar-2017 05:27:31 UTC] PHP   7. Illuminate\Foundation\Application->registerConfiguredProviders() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php:17
+[07-Mar-2017 05:27:31 UTC] PHP   8. Illuminate\Foundation\ProviderRepository->load() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:530
+[07-Mar-2017 05:27:31 UTC] PHP   9. Illuminate\Foundation\ProviderRepository->compileManifest() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:60
+[07-Mar-2017 05:27:31 UTC] PHP  10. Illuminate\Foundation\ProviderRepository->createProvider() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:114
+[07-Mar-2017 05:27:34 UTC] PHP Fatal error:  Class 'Barryvdh¥Debugbar\ServiceProvider' not found in /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[07-Mar-2017 05:27:34 UTC] PHP Stack trace:
+[07-Mar-2017 05:27:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/public/index.php:0
+[07-Mar-2017 05:27:34 UTC] PHP   2. Illuminate\Foundation\Http\Kernel->handle() /home/ubuntu/workspace/cms/public/index.php:54
+[07-Mar-2017 05:27:34 UTC] PHP   3. Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:99
+[07-Mar-2017 05:27:34 UTC] PHP   4. Illuminate\Foundation\Http\Kernel->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:127
+[07-Mar-2017 05:27:34 UTC] PHP   5. Illuminate\Foundation\Application->bootstrapWith() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:232
+[07-Mar-2017 05:27:34 UTC] PHP   6. Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:203
+[07-Mar-2017 05:27:34 UTC] PHP   7. Illuminate\Foundation\Application->registerConfiguredProviders() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php:17
+[07-Mar-2017 05:27:34 UTC] PHP   8. Illuminate\Foundation\ProviderRepository->load() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:530
+[07-Mar-2017 05:27:34 UTC] PHP   9. Illuminate\Foundation\ProviderRepository->compileManifest() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:60
+[07-Mar-2017 05:27:34 UTC] PHP  10. Illuminate\Foundation\ProviderRepository->createProvider() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:114
+[07-Mar-2017 05:28:01 UTC] PHP Fatal error:  Class 'Barryvdh¥Debugbar\ServiceProvider' not found in /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[07-Mar-2017 05:28:01 UTC] PHP Stack trace:
+[07-Mar-2017 05:28:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/public/index.php:0
+[07-Mar-2017 05:28:01 UTC] PHP   2. Illuminate\Foundation\Http\Kernel->handle() /home/ubuntu/workspace/cms/public/index.php:54
+[07-Mar-2017 05:28:01 UTC] PHP   3. Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:99
+[07-Mar-2017 05:28:01 UTC] PHP   4. Illuminate\Foundation\Http\Kernel->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:127
+[07-Mar-2017 05:28:01 UTC] PHP   5. Illuminate\Foundation\Application->bootstrapWith() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:232
+[07-Mar-2017 05:28:01 UTC] PHP   6. Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:203
+[07-Mar-2017 05:28:01 UTC] PHP   7. Illuminate\Foundation\Application->registerConfiguredProviders() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php:17
+[07-Mar-2017 05:28:01 UTC] PHP   8. Illuminate\Foundation\ProviderRepository->load() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:530
+[07-Mar-2017 05:28:01 UTC] PHP   9. Illuminate\Foundation\ProviderRepository->compileManifest() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:60
+[07-Mar-2017 05:28:01 UTC] PHP  10. Illuminate\Foundation\ProviderRepository->createProvider() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:114
+[07-Mar-2017 05:28:14 UTC] PHP Fatal error:  Class 'Barryvdh¥Debugbar\ServiceProvider' not found in /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[07-Mar-2017 05:28:14 UTC] PHP Stack trace:
+[07-Mar-2017 05:28:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/public/index.php:0
+[07-Mar-2017 05:28:14 UTC] PHP   2. Illuminate\Foundation\Http\Kernel->handle() /home/ubuntu/workspace/cms/public/index.php:54
+[07-Mar-2017 05:28:14 UTC] PHP   3. Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:99
+[07-Mar-2017 05:28:14 UTC] PHP   4. Illuminate\Foundation\Http\Kernel->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:127
+[07-Mar-2017 05:28:14 UTC] PHP   5. Illuminate\Foundation\Application->bootstrapWith() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:232
+[07-Mar-2017 05:28:14 UTC] PHP   6. Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:203
+[07-Mar-2017 05:28:14 UTC] PHP   7. Illuminate\Foundation\Application->registerConfiguredProviders() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php:17
+[07-Mar-2017 05:28:14 UTC] PHP   8. Illuminate\Foundation\ProviderRepository->load() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:530
+[07-Mar-2017 05:28:14 UTC] PHP   9. Illuminate\Foundation\ProviderRepository->compileManifest() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:60
+[07-Mar-2017 05:28:14 UTC] PHP  10. Illuminate\Foundation\ProviderRepository->createProvider() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:114
+[07-Mar-2017 05:29:36 UTC] PHP Fatal error:  Class 'Barryvdh¥Debugbar\ServiceProvider' not found in /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[07-Mar-2017 05:29:36 UTC] PHP Stack trace:
+[07-Mar-2017 05:29:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/public/index.php:0
+[07-Mar-2017 05:29:36 UTC] PHP   2. Illuminate\Foundation\Http\Kernel->handle() /home/ubuntu/workspace/cms/public/index.php:54
+[07-Mar-2017 05:29:36 UTC] PHP   3. Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:99
+[07-Mar-2017 05:29:36 UTC] PHP   4. Illuminate\Foundation\Http\Kernel->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:127
+[07-Mar-2017 05:29:36 UTC] PHP   5. Illuminate\Foundation\Application->bootstrapWith() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:232
+[07-Mar-2017 05:29:36 UTC] PHP   6. Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:203
+[07-Mar-2017 05:29:36 UTC] PHP   7. Illuminate\Foundation\Application->registerConfiguredProviders() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php:17
+[07-Mar-2017 05:29:36 UTC] PHP   8. Illuminate\Foundation\ProviderRepository->load() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:530
+[07-Mar-2017 05:29:36 UTC] PHP   9. Illuminate\Foundation\ProviderRepository->compileManifest() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:60
+[07-Mar-2017 05:29:36 UTC] PHP  10. Illuminate\Foundation\ProviderRepository->createProvider() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:114
+[07-Mar-2017 05:30:18 UTC] PHP Fatal error:  Class 'Barryvdh¥Debugbar\ServiceProvider' not found in /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[07-Mar-2017 05:30:18 UTC] PHP Stack trace:
+[07-Mar-2017 05:30:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/public/index.php:0
+[07-Mar-2017 05:30:18 UTC] PHP   2. Illuminate\Foundation\Http\Kernel->handle() /home/ubuntu/workspace/cms/public/index.php:54
+[07-Mar-2017 05:30:18 UTC] PHP   3. Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:99
+[07-Mar-2017 05:30:18 UTC] PHP   4. Illuminate\Foundation\Http\Kernel->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:127
+[07-Mar-2017 05:30:18 UTC] PHP   5. Illuminate\Foundation\Application->bootstrapWith() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:232
+[07-Mar-2017 05:30:18 UTC] PHP   6. Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:203
+[07-Mar-2017 05:30:18 UTC] PHP   7. Illuminate\Foundation\Application->registerConfiguredProviders() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php:17
+[07-Mar-2017 05:30:18 UTC] PHP   8. Illuminate\Foundation\ProviderRepository->load() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:530
+[07-Mar-2017 05:30:18 UTC] PHP   9. Illuminate\Foundation\ProviderRepository->compileManifest() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:60
+[07-Mar-2017 05:30:18 UTC] PHP  10. Illuminate\Foundation\ProviderRepository->createProvider() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:114
+[07-Mar-2017 05:33:49 UTC] PHP Fatal error:  Class 'Barryvdh¥Debugbar\ServiceProvider' not found in /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[07-Mar-2017 05:33:49 UTC] PHP Stack trace:
+[07-Mar-2017 05:33:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/public/index.php:0
+[07-Mar-2017 05:33:49 UTC] PHP   2. Illuminate\Foundation\Http\Kernel->handle() /home/ubuntu/workspace/cms/public/index.php:54
+[07-Mar-2017 05:33:49 UTC] PHP   3. Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:99
+[07-Mar-2017 05:33:49 UTC] PHP   4. Illuminate\Foundation\Http\Kernel->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:127
+[07-Mar-2017 05:33:49 UTC] PHP   5. Illuminate\Foundation\Application->bootstrapWith() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:232
+[07-Mar-2017 05:33:49 UTC] PHP   6. Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:203
+[07-Mar-2017 05:33:49 UTC] PHP   7. Illuminate\Foundation\Application->registerConfiguredProviders() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php:17
+[07-Mar-2017 05:33:49 UTC] PHP   8. Illuminate\Foundation\ProviderRepository->load() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:530
+[07-Mar-2017 05:33:49 UTC] PHP   9. Illuminate\Foundation\ProviderRepository->compileManifest() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:60
+[07-Mar-2017 05:33:49 UTC] PHP  10. Illuminate\Foundation\ProviderRepository->createProvider() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:114
+[07-Mar-2017 05:34:40 UTC] PHP Fatal error:  Class 'Barryvdh¥Debugbar\ServiceProvider' not found in /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[07-Mar-2017 05:34:40 UTC] PHP Stack trace:
+[07-Mar-2017 05:34:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/public/index.php:0
+[07-Mar-2017 05:34:40 UTC] PHP   2. Illuminate\Foundation\Http\Kernel->handle() /home/ubuntu/workspace/cms/public/index.php:54
+[07-Mar-2017 05:34:40 UTC] PHP   3. Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:99
+[07-Mar-2017 05:34:40 UTC] PHP   4. Illuminate\Foundation\Http\Kernel->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:127
+[07-Mar-2017 05:34:40 UTC] PHP   5. Illuminate\Foundation\Application->bootstrapWith() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:232
+[07-Mar-2017 05:34:40 UTC] PHP   6. Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:203
+[07-Mar-2017 05:34:40 UTC] PHP   7. Illuminate\Foundation\Application->registerConfiguredProviders() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php:17
+[07-Mar-2017 05:34:40 UTC] PHP   8. Illuminate\Foundation\ProviderRepository->load() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:530
+[07-Mar-2017 05:34:40 UTC] PHP   9. Illuminate\Foundation\ProviderRepository->compileManifest() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:60
+[07-Mar-2017 05:34:40 UTC] PHP  10. Illuminate\Foundation\ProviderRepository->createProvider() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:114
+[07-Mar-2017 05:38:56 UTC] PHP Fatal error:  Class 'LOG' not found in /home/ubuntu/workspace/cms/app/Http/routes.php on line 20
+[07-Mar-2017 05:38:56 UTC] PHP Stack trace:
+[07-Mar-2017 05:38:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/public/index.php:0
+[07-Mar-2017 05:38:56 UTC] PHP   2. Illuminate\Foundation\Http\Kernel->handle() /home/ubuntu/workspace/cms/public/index.php:54
+[07-Mar-2017 05:38:56 UTC] PHP   3. Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:99
+[07-Mar-2017 05:38:56 UTC] PHP   4. Illuminate\Pipeline\Pipeline->then() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:132
+[07-Mar-2017 05:38:56 UTC] PHP   5. call_user_func:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[07-Mar-2017 05:38:56 UTC] PHP   6. Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[07-Mar-2017 05:38:56 UTC] PHP   7. call_user_func:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32
+[07-Mar-2017 05:38:56 UTC] PHP   8. Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32
+[07-Mar-2017 05:38:56 UTC] PHP   9. call_user_func_array:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136
+[07-Mar-2017 05:38:56 UTC] PHP  10. Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136
+[07-Mar-2017 05:38:56 UTC] PHP  11. Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php:44
+[07-Mar-2017 05:38:56 UTC] PHP  12. call_user_func:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32
+[07-Mar-2017 05:38:56 UTC] PHP  13. Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32
+[07-Mar-2017 05:38:56 UTC] PHP  14. call_user_func_array:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136
+[07-Mar-2017 05:38:56 UTC] PHP  15. Barryvdh\Debugbar\Middleware\Debugbar->handle() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136
+[07-Mar-2017 05:38:56 UTC] PHP  16. Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}() /home/ubuntu/workspace/cms/vendor/barryvdh/laravel-debugbar/src/Middleware/Debugbar.php:51
+[07-Mar-2017 05:38:56 UTC] PHP  17. call_user_func:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52
+[07-Mar-2017 05:38:56 UTC] PHP  18. Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52
+[07-Mar-2017 05:38:56 UTC] PHP  19. Illuminate\Routing\Router->dispatch() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:246
+[07-Mar-2017 05:38:56 UTC] PHP  20. Illuminate\Routing\Router->dispatchToRoute() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Router.php:675
+[07-Mar-2017 05:38:56 UTC] PHP  21. Illuminate\Routing\Router->runRouteWithinStack() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Router.php:699
+[07-Mar-2017 05:38:56 UTC] PHP  22. Illuminate\Pipeline\Pipeline->then() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Router.php:726
+[07-Mar-2017 05:38:56 UTC] PHP  23. call_user_func:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[07-Mar-2017 05:38:56 UTC] PHP  24. Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[07-Mar-2017 05:38:56 UTC] PHP  25. call_user_func:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32
+[07-Mar-2017 05:38:56 UTC] PHP  26. Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32
+[07-Mar-2017 05:38:56 UTC] PHP  27. call_user_func_array:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136
+[07-Mar-2017 05:38:56 UTC] PHP  28. Illuminate\Cookie\Middleware\EncryptCookies->handle() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136
+[07-Mar-2017 05:38:56 UTC] PHP  29. Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:59
+[07-Mar-2017 05:38:56 UTC] PHP  30. call_user_func:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32
+[07-Mar-2017 05:38:56 UTC] PHP  31. Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32
+[07-Mar-2017 05:38:56 UTC] PHP  32. call_user_func_array:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136
+[07-Mar-2017 05:38:56 UTC] PHP  33. Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136
+[07-Mar-2017 05:38:56 UTC] PHP  34. Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37
+[07-Mar-2017 05:38:56 UTC] PHP  35. call_user_func:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32
+[07-Mar-2017 05:38:56 UTC] PHP  36. Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32
+[07-Mar-2017 05:38:56 UTC] PHP  37. call_user_func_array:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136
+[07-Mar-2017 05:38:56 UTC] PHP  38. Illuminate\Session\Middleware\StartSession->handle() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136
+[07-Mar-2017 05:38:56 UTC] PHP  39. Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:64
+[07-Mar-2017 05:38:56 UTC] PHP  40. call_user_func:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32
+[07-Mar-2017 05:38:56 UTC] PHP  41. Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32
+[07-Mar-2017 05:38:56 UTC] PHP  42. call_user_func_array:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136
+[07-Mar-2017 05:38:56 UTC] PHP  43. Illuminate\View\Middleware\ShareErrorsFromSession->handle() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136
+[07-Mar-2017 05:38:56 UTC] PHP  44. Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49
+[07-Mar-2017 05:38:56 UTC] PHP  45. call_user_func:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32
+[07-Mar-2017 05:38:56 UTC] PHP  46. Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32
+[07-Mar-2017 05:38:56 UTC] PHP  47. call_user_func_array:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136
+[07-Mar-2017 05:38:56 UTC] PHP  48. Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:136
+[07-Mar-2017 05:38:56 UTC] PHP  49. Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:64
+[07-Mar-2017 05:38:56 UTC] PHP  50. call_user_func:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52
+[07-Mar-2017 05:38:56 UTC] PHP  51. Illuminate\Routing\Router->Illuminate\Routing\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52
+[07-Mar-2017 05:38:56 UTC] PHP  52. Illuminate\Routing\Route->run() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Router.php:724
+[07-Mar-2017 05:38:56 UTC] PHP  53. Illuminate\Routing\Route->runCallable() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Route.php:137
+[07-Mar-2017 05:38:56 UTC] PHP  54. call_user_func_array:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Route.php:158}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Route.php:158
+[07-Mar-2017 05:38:56 UTC] PHP  55. App\Providers\RouteServiceProvider->{closure:/home/ubuntu/workspace/cms/app/Http/routes.php:18-22}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Route.php:158
+[07-Mar-2017 07:33:19 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cms/app/Http/routes.php on line 55
+[07-Mar-2017 07:33:19 UTC] PHP Stack trace:
+[07-Mar-2017 07:33:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/public/index.php:0
+[07-Mar-2017 07:33:19 UTC] PHP   2. Illuminate\Foundation\Http\Kernel->handle() /home/ubuntu/workspace/cms/public/index.php:54
+[07-Mar-2017 07:33:19 UTC] PHP   3. Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:99
+[07-Mar-2017 07:33:19 UTC] PHP   4. Illuminate\Foundation\Http\Kernel->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:127
+[07-Mar-2017 07:33:19 UTC] PHP   5. Illuminate\Foundation\Application->bootstrapWith() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:232
+[07-Mar-2017 07:33:19 UTC] PHP   6. Illuminate\Foundation\Bootstrap\BootProviders->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:203
+[07-Mar-2017 07:33:19 UTC] PHP   7. Illuminate\Foundation\Application->boot() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php:17
+[07-Mar-2017 07:33:19 UTC] PHP   8. array_walk() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:741
+[07-Mar-2017 07:33:19 UTC] PHP   9. Illuminate\Foundation\Application->Illuminate\Foundation\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:741
+[07-Mar-2017 07:33:19 UTC] PHP  10. Illuminate\Foundation\Application->bootProvider() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:740
+[07-Mar-2017 07:33:19 UTC] PHP  11. Illuminate\Container\Container->call() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:757
+[07-Mar-2017 07:33:19 UTC] PHP  12. call_user_func_array:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Container/Container.php:507}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Container/Container.php:507
+[07-Mar-2017 07:33:19 UTC] PHP  13. App\Providers\RouteServiceProvider->boot() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Container/Container.php:507
+[07-Mar-2017 07:33:19 UTC] PHP  14. Illuminate\Foundation\Support\Providers\RouteServiceProvider->boot() /home/ubuntu/workspace/cms/app/Providers/RouteServiceProvider.php:29
+[07-Mar-2017 07:33:19 UTC] PHP  15. Illuminate\Foundation\Support\Providers\RouteServiceProvider->loadRoutes() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php:31
+[07-Mar-2017 07:33:19 UTC] PHP  16. Illuminate\Container\Container->call() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php:72
+[07-Mar-2017 07:33:19 UTC] PHP  17. call_user_func_array:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Container/Container.php:507}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Container/Container.php:507
+[07-Mar-2017 07:33:19 UTC] PHP  18. App\Providers\RouteServiceProvider->map() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Container/Container.php:507
+[07-Mar-2017 07:33:19 UTC] PHP  19. App\Providers\RouteServiceProvider->mapWebRoutes() /home/ubuntu/workspace/cms/app/Providers/RouteServiceProvider.php:40
+[07-Mar-2017 07:33:19 UTC] PHP  20. Illuminate\Routing\Router->group() /home/ubuntu/workspace/cms/app/Providers/RouteServiceProvider.php:59
+[07-Mar-2017 07:33:19 UTC] PHP  21. call_user_func:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Router.php:398}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Router.php:398
+[07-Mar-2017 07:33:19 UTC] PHP  22. App\Providers\RouteServiceProvider->App\Providers\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Router.php:398
+[07-Mar-2017 07:35:21 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cms/app/Http/routes.php on line 59
+[07-Mar-2017 07:35:21 UTC] PHP Stack trace:
+[07-Mar-2017 07:35:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/public/index.php:0
+[07-Mar-2017 07:35:21 UTC] PHP   2. Illuminate\Foundation\Http\Kernel->handle() /home/ubuntu/workspace/cms/public/index.php:54
+[07-Mar-2017 07:35:21 UTC] PHP   3. Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:99
+[07-Mar-2017 07:35:21 UTC] PHP   4. Illuminate\Foundation\Http\Kernel->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:127
+[07-Mar-2017 07:35:21 UTC] PHP   5. Illuminate\Foundation\Application->bootstrapWith() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:232
+[07-Mar-2017 07:35:21 UTC] PHP   6. Illuminate\Foundation\Bootstrap\BootProviders->bootstrap() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:203
+[07-Mar-2017 07:35:21 UTC] PHP   7. Illuminate\Foundation\Application->boot() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php:17
+[07-Mar-2017 07:35:21 UTC] PHP   8. array_walk() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:741
+[07-Mar-2017 07:35:21 UTC] PHP   9. Illuminate\Foundation\Application->Illuminate\Foundation\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:741
+[07-Mar-2017 07:35:21 UTC] PHP  10. Illuminate\Foundation\Application->bootProvider() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:740
+[07-Mar-2017 07:35:21 UTC] PHP  11. Illuminate\Container\Container->call() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:757
+[07-Mar-2017 07:35:21 UTC] PHP  12. call_user_func_array:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Container/Container.php:507}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Container/Container.php:507
+[07-Mar-2017 07:35:21 UTC] PHP  13. App\Providers\RouteServiceProvider->boot() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Container/Container.php:507
+[07-Mar-2017 07:35:21 UTC] PHP  14. Illuminate\Foundation\Support\Providers\RouteServiceProvider->boot() /home/ubuntu/workspace/cms/app/Providers/RouteServiceProvider.php:29
+[07-Mar-2017 07:35:21 UTC] PHP  15. Illuminate\Foundation\Support\Providers\RouteServiceProvider->loadRoutes() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php:31
+[07-Mar-2017 07:35:21 UTC] PHP  16. Illuminate\Container\Container->call() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php:72
+[07-Mar-2017 07:35:21 UTC] PHP  17. call_user_func_array:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Container/Container.php:507}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Container/Container.php:507
+[07-Mar-2017 07:35:21 UTC] PHP  18. App\Providers\RouteServiceProvider->map() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Container/Container.php:507
+[07-Mar-2017 07:35:21 UTC] PHP  19. App\Providers\RouteServiceProvider->mapWebRoutes() /home/ubuntu/workspace/cms/app/Providers/RouteServiceProvider.php:40
+[07-Mar-2017 07:35:21 UTC] PHP  20. Illuminate\Routing\Router->group() /home/ubuntu/workspace/cms/app/Providers/RouteServiceProvider.php:59
+[07-Mar-2017 07:35:21 UTC] PHP  21. call_user_func:{/home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Router.php:398}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Router.php:398
+[07-Mar-2017 07:35:21 UTC] PHP  22. App\Providers\RouteServiceProvider->App\Providers\{closure}() /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Routing/Router.php:398
